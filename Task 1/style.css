@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 10px;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+ul{
+	list-style: none;
+}
+body{
+	font-size: 1.6rem;
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: rgb(240, 198, 143);
+}
+
+.main-navigation ul{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px;
+}
+.main-navigation a{
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.main-navigation a:hover{
+	text-decoration: underline;
+	color: rgb(131, 124, 124);
+	transition: .5s ease;
+
+}
+
+.text div{
+	padding: 40px 120px;
+}
+.text div h2{
+	text-align: center;
+	margin: 30px 0;
+	text-transform: uppercase;
+	word-spacing: .8rem; 
+	letter-spacing: 1rem;
+}
+.text div p{
+	line-height: 25px;
+	text-indent: 5rem;
+	text-align: justify;
+}
+.text div p::first-line::first-letter{
+	font-size: 2rem;
+}
+
+.go-top{
+	font-size: 5rem;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	vertical-align: center;
+	transform: rotate(-90deg);
+	position: fixed;
+	top: 95%;
+	left: -10px;
+	
+}
+.text div h3{
+	margin-top: 20px;
+	text-decoration: underline;
+}
+.on-a-note{
+	font-style: italic;
+	font-weight: 600;
+	width: 70%;
+}
+
+.quote{
+	font-style: italic;
+	width: 33%;
+	margin: 80px 0;
+}
