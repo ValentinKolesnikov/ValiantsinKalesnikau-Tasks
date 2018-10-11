@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<!--Open Sans by Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+</head>
+<body>
+	<div class="form">
+		<h3 class="form-headline">Form Action</h3> 
+		<span class='mc4wp'>_mc4wp_action</span>
+		<p class="description">This field will allow your visitors to choose whether they would like to subscribe or unsubscribe</p>
+		<form method="GET">
+			<label>
+			<span class="field-label-span">Field Label</span><br>
+			<input class='field-label-input' placeholder="Form Action" type="text"><br>
+			</label>
+			<label>
+			<span class="field-label-span">Choise Type</span><br>
+			<select name="type" class="select-type">
+				<option value="radio">Radio Button</option>
+				<option value="check">CheckBox</option>
+			</select><br>
+			</label>
+			<span class="field-label-span">Choises</span><br>
+			<div class="radio-cont">
+				<label class="radio">
+
+					<input name="sub" id="subsc" class="radio-item" type="radio">
+
+					<label for="subsc" class="option-label">
+						<input class="radio-option" id="subscribe" value="Subscribe">
+					</label>
+					<button  class="cross"><img src="./image/x.png" alt="cross"></button><br>
+
+					<input name="sub" id="unsubsc" class="radio-item" type="radio">
+
+					<label for="unsubsc" class="option-label">
+						<input class="radio-option" id="unsubscribe" value="Unsubscribe">
+					</label>
+					<button class="cross"><img src="./image/x.png" alt="cross"></button><br>
+
+				</label>
+			</div><br>
+			<input type="checkbox" class="new-check" id="check"><label class="check-label" for="check"><span class="description">Wrap in pharagraph text?</span><br></label>
+			<input id="sub-btn" type="submit" value="Add to form"><br>
+		</form>
+	</div>
+</body>
+</html>
