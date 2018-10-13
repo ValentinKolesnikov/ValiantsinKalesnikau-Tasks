@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Rage Italic LET';
+    src: url('RageItalicLetPlain.woff2') format('woff2'),
+        url('RageItalicLetPlain.woff') format('woff'),
+        url('RageItalicLetPlain.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
