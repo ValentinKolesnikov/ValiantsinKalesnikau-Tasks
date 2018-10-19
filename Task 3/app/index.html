@@ -13,14 +13,15 @@
 	</head>
 	<body class="page">
 		<div class="page__line">
-			<div class="head">
-				<div class="head__left left">
+			<div class="head left-right">
+				<div class="head__left half-block">
 					<a href="#" class="head__logo logo">Stimulus</a>
 				</div>
-				<div class="head__right right">
-					<div class="head__burger">
-						<i class="fas fa-bars"></i>
-					</div>
+				<div class="head__right half-block">
+					
+						<input type="checkbox" class="burger__check" id="burger__checkbox">
+						<label class="head__burger" for="burger__checkbox"><i class="fas fa-bars"></i></label>
+					
 					<nav class="head__navig navig">
 						<a href="#" class="navig__link navig__link_active link">Home</a>
 						<a href="#about" class="navig__link link">About Me</a>
@@ -45,8 +46,8 @@
 
 		
 			<div class="page__line">
-				<div class="about">
-					<div class="about-left left">
+				<div class="about left-right">
+					<div class="about-left half-block">
 						<div class="about__text about-text">
 							<h2 class="about-text__headline headline">Donec auctor</h2>
 							<span class="about-text__parag_gold text">Sed vulputate vitae diam quis bibendum</span>
@@ -56,10 +57,10 @@
 								odio at velit.</p>
 						</div>
 					</div>
-					<div class="about-right right">
-						<div class="my-skills">
-							<div class="my-skills__left-side left"></div>
-							<div class="my-skills__right-side right">
+					<div class="about-right half-block">
+						<div class="my-skills left-right">
+							<div class="my-skills__left-side half-block"></div>
+							<div class="my-skills__right-side half-block">
 								<div class="my-skills__desc">
 									<h2 class="my-skills__headline headline">My Skills</h2>
 									<p class="my-skills__text text">Photoshop . HTML CSS JS . Web Design</p>
@@ -103,33 +104,137 @@
 		</div>
 		
 	
-		<!-- <div class="page__line">
+		<div class="page__line">
 			<div class="my-tech-skills">
-				<div class="my-tech-skills__item">
-					<img src="" alt="computer" class="my-tech-skills__icon">
-					<h2 class="my-tech-skills__headline headline">Interface Design</h2>
-					<div class="my-tech-skills__text text">Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar
-						ante.</div>
+				<div class="my-tech-skills__item my-tech-skills__item_yellow">
+					<div class="my-tech-skills__item_padding">
+						<i class="fas fa-desktop my-tech-skills__icon"></i>
+						<h3 class="my-tech-skills__headline headline-3">Interface Design</h3>
+						<div class="my-tech-skills__text text">Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar
+							ante.</div>
+					</div>
+				</div>
+				<div class="my-tech-skills__item my-tech-skills__item_red">
+					<div class="my-tech-skills__item_padding">
+						<i class="fas fa-paper-plane my-tech-skills__icon"></i>
+						<h3 class="my-tech-skills__headline headline-3">Media Strategy</h3>
+						<div class="my-tech-skills__text text">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis
+							congue sem.</div>
+					</div>
+				</div>
+				<div class="my-tech-skills__item my-tech-skills__item_black">
+					<div class="my-tech-skills__item_padding">
+						<i class="fas fa-calendar-alt my-tech-skills__icon"></i>
+						<h3 class="my-tech-skills__headline headline-3">Mobile App</h3>
+						<div class="my-tech-skills__text text">Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra
+							iaculis.</div>
+					</div>
 				</div>
 				<div class="my-tech-skills__item">
-					<img src="" alt="plane" class="my-tech-skills__icon">
-					<h2 class="my-tech-skills__headline headline">Media Strategy</h2>
-					<div class="my-tech-skills__text text">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis
-						congue sem.</div>
-				</div>
-				<div class="my-tech-skills__item">
-					<img src="" alt="calendar" class="my-tech-skills__icon">
-					<h2 class="my-tech-skills__headline headline">Mobile App</h2>
-					<div class="my-tech-skills__text text">Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra
-						iaculis.</div>
-				</div>
-				<div class="my-tech-skills__item">
-					<img src="" alt="html5" class="my-tech-skills__icon">
-					<h2 class="my-tech-skills__headline headline">Coding</h2>
-					<div class="my-tech-skills__text text">Mauris convallis eros massa, vitae euismod arcu tempus ut. Quisque viverra
-						iaculis.</div>
+					<div class="my-tech-skills__item_padding">
+						<i class="fab fa-html5 my-tech-skills__icon my-tech-skills__icon_black"></i>
+						<h3 class="my-tech-skills__headline my-tech-skills__headline_black headline-3">Coding</h3>
+						<div class="my-tech-skills__text my-tech-skills__text_black text">Mauris convallis eros massa, vitae euismod arcu tempus
+	ut. Quisque viverra
+							iaculis.</div>
+					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
+
+		<div class="page__line my-experiences left-right">
+			<div class="my-experiences__left-side half-block"></div>
+			<div class="my-experiences__right-side half-block">
+				<div class="my-experiences__right-side_padding">
+					<h2 class="my-experiences__headline-2 headline_white">My Experiences</h2>
+					<p class="my-experiences__text text_white">Previous companies and my tasks</p>
+					<div class="dates">
+						<div class="dates__item">
+							<i class="fas fa-laptop dates__icon"></i>
+							<h3 class="dates__headline headline-3">Graphic Designer</h3>
+							<span class="dates__interval">2014 Jul - 2015 Sep</span>
+							<p class="dates_text text_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+						<div class="dates__item">
+							<i class="fas fa-laptop dates__icon"></i>
+							<h3 class="dates__headline headline-3">Web Designer</h3>
+							<span class="dates__interval">2015 Oct - 2017 Jan</span>
+							<p class="dates_text text_white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+		</div>
+		<div class="page__line my-education left-right">
+			<div class="my-education__left-side half-block">
+				<div class="my-education__right-side_padding">
+					<h2 class="my-education__headline-2 headline_white">My Education</h2>
+					<p class="my-education__text text_white">In cursus orci non ipsum gravida dignissim</p>
+					<div class="dates">
+						<div class="dates__item">
+							<i class="fas fa-laptop dates__icon"></i>
+							<h3 class="dates__headline headline-3">Master in Design</h3>
+							<span class="dates__interval"> 2012 Jan - 2014 May</span>
+							<p class="dates_text text_white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque.</p>
+						</div>
+						<div class="dates__item">
+							<i class="fas fa-laptop dates__icon"></i>
+							<h3 class="dates__headline headline-3">Bachelor of Arts</h3>
+							<span class="dates__interval">2008 May - 2011 Dec</span>
+							<p class="dates_text text_white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="my-education__right-side half-block"></div>
+		</div>
+		<div class="page__line quotes">
+			<div class="quotes__wrapper">
+					<i class="fas fa-star quotes__icon"></i>
+					<h2 class="quotes__headline headline">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci</h2>
+					<p class="quotes__text text">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
+			</div>
+		</div>
+		<div class="page__line contacts left-right">
+			<div class="contacts__left-side half-block">
+				<div class="say-hello">
+					<h2 class="say-hello__headline headline">Say hello..</h2>
+					<p class="say-hello__text text_white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+					<form method="GET" class="say-hello_form contact-form">
+						<input placeholder="Your Name" type="text" class="contact-form__name form-style">
+						<input placeholder="Your Email" type="email" class="contact-form__email form-style">
+						<textarea placeholder="Write your massage..." class="contact-form__message form-style" rows="5"></textarea>
+						<input type="submit" value='Send' class="contact-form__submit button">
+					</form>
+				</div>
+			</div>
+			<div class="contacts__right-side half-block">
+				<div class="visit-my-office left-right">
+					<div class="visit-my-office__left-side half-block"></div>
+					<div class="visit-my-office__right-side half-block">
+						<div class="visit-my-office__right-side_padding">
+							<h3 class="visit-my-office__headline headline-3">Visit my office</h3>
+							<p class="visit-my-office__text text">456 New Street 22000, New York City, USA</p>
+							<h3 class="visit-my-office__headline headline-3">Contact.</h3>
+							<div class="visit-my-office__contact">
+								<i class="fas fa-phone visit-my-office__icon"></i>
+								<span class="visit-my-office__tel text">01-0110-0220</span>
+							</div>
+							<div class="visit-my-office__contact">
+								<i class="far fa-envelope visit-my-office__icon"></i>
+								<a href='#' class="visit-my-office__email link">hello@company.co</a>
+							</div>
+							<div class="visit-my-office__contact">
+								<i class="fas fa-globe-asia visit-my-office__icon"></i>
+								<a href='#' class="visit-my-office__site link">company.co</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
