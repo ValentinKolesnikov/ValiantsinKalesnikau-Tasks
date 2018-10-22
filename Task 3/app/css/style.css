@@ -379,18 +379,24 @@ html{
 	font-size: 1.8rem;
 	color: #fff;
 	background-color: transparent;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+	border-bottom: 1px solid #e4ae58;
 	padding: 1rem;
 	font-weight: 3006
 }
 .contact-form__name{
 	margin-bottom: 2rem; 
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2rem;
 }
 .contact-form__email {
 	margin-bottom: 2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2rem;
 }
 .contact-form__message{
 	margin-bottom: 2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2rem;
 }
 .contact-form__submit{
 	max-width: 40%;
@@ -440,6 +446,53 @@ html{
 	margin-right: 1rem;
 	vertical-align: middle;
 }
+.main-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10rem 0;
+}
+.social{
+	display: flex;
+	margin-top: 3rem;
+}
+.social__item{
+	margin-right: 5%;
+	margin-left: 5%;
+	height: 3.6rem;
+	width: 3.6rem;
+	border-radius: 50%;
+	background-color: transparent;
+	text-align: center;
+	line-height: 3.6rem;
+	transition: all 0.2s ease;
+	
+}
+.social__icon{
+	color: #999;
+	font-size: 1.8rem;
+	transition: all 0.2s ease;
+
+}
+.social__icon:hover{
+	/* height: 3.6rem;
+	width: 3.6rem;
+	border-radius: 50%;
+	background-color: #e4ae58;
+	text-align: center;
+	line-height: 3.6rem; */
+	cursor: pointer;
+	color: #e4ae58;
+	transition: all 0.2s ease;
+}
+.footer__link{
+	color: #e4ae58;
+}
+
+
+
+
 
 
 @media (min-width: 767px) and (max-width: 1200px) {
@@ -526,14 +579,26 @@ html{
 	.quotes__wrapper {
 		padding: 8rem 10rem;
 	}
-	
+	.contacts__left-side{
+		width: 100%;
+		height: 100%;
+	}
+
+	.contacts__right-side {
+		width: 100%;
+	}
+}
+@media (min-width: 2700px) and (max-width: 4000px) {
+	html {
+		font-size: 25px;
+	}
 }
 @media (min-width: 1400px) and (max-width: 1600px) {
 	html {
 		font-size: 12px;
 	}
 }
-@media (min-width: 1600px)  {
+@media (min-width: 1600px) and (max-width: 2699px) {
 	html{
 		font-size: 15px;
 	}
@@ -707,6 +772,26 @@ html{
 	.quotes__text {
 		font-size: 1.2rem;
 	}
+	.contacts__left-side {
+		width: 100%;
+		height: 100%;
+	}
+
+	.contacts__right-side {
+		width: 100%;
+		height: 100%;
+	}
+	.visit-my-office__right-side{
+		width: 100%;
+	}
+	.visit-my-office__left-side{
+		width: 100%;
+		height: 320px;
+	}
+	.main-footer__text{
+		text-align: center;
+	}
+	
 }
 
 @media (min-height: 550px) and (max-height: 600px) {

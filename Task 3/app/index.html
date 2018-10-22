@@ -25,9 +25,9 @@
 					<nav class="head__navig navig">
 						<a href="#" class="navig__link navig__link_active link">Home</a>
 						<a href="#about" class="navig__link link">About Me</a>
-						<a href="#" class="navig__link link">Experiences</a>
-						<a href="#" class="navig__link link">Testimonial</a>
-						<a href="#" class="navig__link link">Contact</a>
+						<a href="#experience" class="navig__link link">Experiences</a>
+						<a href="#testimonial" class="navig__link link">Testimonial</a>
+						<a href="#contacts" class="navig__link link">Contact</a>
 					</nav>
 
 					<div class="head__site-headline site-headline">
@@ -46,7 +46,7 @@
 
 		
 			<div class="page__line">
-				<div class="about left-right">
+				<div id="about" class="about left-right">
 					<div class="about-left half-block">
 						<div class="about__text about-text">
 							<h2 class="about-text__headline headline">Donec auctor</h2>
@@ -142,7 +142,7 @@
 			</div>
 		</div>
 
-		<div class="page__line my-experiences left-right">
+		<div class="page__line my-experiences left-right" id="experience">
 			<div class="my-experiences__left-side half-block"></div>
 			<div class="my-experiences__right-side half-block">
 				<div class="my-experiences__right-side_padding">
@@ -191,14 +191,14 @@
 			</div>
 			<div class="my-education__right-side half-block"></div>
 		</div>
-		<div class="page__line quotes">
+		<div class="page__line quotes" id="testimonial">
 			<div class="quotes__wrapper">
 					<i class="fas fa-star quotes__icon"></i>
 					<h2 class="quotes__headline headline">Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in vestibulum quis, auctor et orci</h2>
 					<p class="quotes__text text">Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem.</p>
 			</div>
 		</div>
-		<div class="page__line contacts left-right">
+		<div class="page__line contacts left-right" id="contacts">
 			<div class="contacts__left-side half-block">
 				<div class="say-hello">
 					<h2 class="say-hello__headline headline">Say hello..</h2>
@@ -221,20 +221,30 @@
 							<h3 class="visit-my-office__headline headline-3">Contact.</h3>
 							<div class="visit-my-office__contact">
 								<i class="fas fa-phone visit-my-office__icon"></i>
-								<span class="visit-my-office__tel text">01-0110-0220</span>
+								<a href="tel:01-0110-0220" class="visit-my-office__tel text link">01-0110-0220</a>
 							</div>
 							<div class="visit-my-office__contact">
 								<i class="far fa-envelope visit-my-office__icon"></i>
-								<a href='#' class="visit-my-office__email link">hello@company.co</a>
+								<a href='mailto:hello@company.co' class="visit-my-office__email link">hello@company.co</a>
 							</div>
 							<div class="visit-my-office__contact">
 								<i class="fas fa-globe-asia visit-my-office__icon"></i>
-								<a href='#' class="visit-my-office__site link">company.co</a>
+								<a href='http://company.co' class="visit-my-office__site link">company.co</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<footer class="main-footer page__line">
+			<div class="main-footer__text text">Copyright © 2016 Your Company | Design: <a href="#" class="footer__link link">templatemo</a></div>
+			<div class="social">
+				<div class="social__item"><i class="fab fa-facebook-f social__icon"></i></div>
+				<div class="social__item"><i class="fab fa-twitter social__icon"></i></div>
+				<div class="social__item"><i class="fab fa-google-plus-g social__icon"></i></div>
+				<div class="social__item"><i class="fab fa-dribbble social__icon"></i></div>
+				<div class="social__item"><i class="fab fa-linkedin-in social__icon"></i></div>
+			</div>
+		</footer>
 	</body>
 </html>
