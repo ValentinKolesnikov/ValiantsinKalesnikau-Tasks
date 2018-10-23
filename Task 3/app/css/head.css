@@ -1,0 +1,80 @@
+.head{
+	height: 100vh;
+}
+.head__left{
+	height: 100%;
+	background: url('../Images/home-img.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+.head__right{
+	height: 100%;
+	background-color: #f0e2d7;
+}
+.head__burger {
+	color: #fff;
+	font-size: 2.5rem;
+	position: absolute;
+	right: 3rem;
+	top: 3rem;
+	display: none;
+}
+#burger__checkbox {
+	display: none;
+
+}
+.head__logo{
+	display: inline-block;
+	margin: 2.5rem 0 0 10%;
+	text-shadow: 1px 1px 2px #fff;
+}
+.head__navig{
+	margin: 3.5rem 0 0 8.5rem;
+}
+.navig__link{
+	font-size: 1.4rem;
+	margin-right: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: all 0.8s ease;
+}
+
+.navig__link:hover{
+	color: #E5B66A;
+	transition: all 0.3s ease;
+}
+.navig__link_active{
+	color: #E5B66A;
+}
+.head__site-headline{
+	margin: 0 2rem 0 4rem;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-30%);
+}
+.site-headline__welcome{
+	font-size: 1.2rem;
+	letter-spacing: 0.12rem;
+	font-weight: 700;
+}
+.site-headline__stimulus {
+	font-weight: 400;
+	color: #242C2C;
+}
+.site-headline__h1{
+	color: #726962;
+	font-weight: 300;
+	font-size: 4.2rem;
+	margin: 0;
+	margin-top: 1rem;
+}
+.site-headline__button{
+	margin-top: 4.5rem;
+	transition: all 0.8s ease;
+}
+
+.site-headline__button:hover {
+	background-color: #E5B66A;
+	border: 3px solid #E5B66A;
+	color: #fff;
+	transition: all 0.4s ease;
+}

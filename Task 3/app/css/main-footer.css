@@ -1,0 +1,48 @@
+.main-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 10rem 0;
+}
+
+.social {
+	display: flex;
+	margin-top: 3rem;
+}
+
+.social__item {
+	margin-right: 5%;
+	margin-left: 5%;
+	height: 3.6rem;
+	width: 3.6rem;
+	border-radius: 50%;
+	background-color: transparent;
+	text-align: center;
+	line-height: 3.6rem;
+	transition: all 0.2s ease;
+
+}
+
+.social__icon {
+	color: #999;
+	font-size: 1.8rem;
+	transition: all 0.2s ease;
+
+}
+
+.social__icon:hover {
+	/* height: 3.6rem;
+	width: 3.6rem;
+	border-radius: 50%;
+	background-color: #e4ae58;
+	text-align: center;
+	line-height: 3.6rem; */
+	cursor: pointer;
+	color: #e4ae58;
+	transition: all 0.2s ease;
+}
+
+.footer__link {
+	color: #e4ae58;
+}

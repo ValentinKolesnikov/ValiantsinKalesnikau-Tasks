@@ -1,0 +1,24 @@
+.quotes {
+	background: url('../Images/quotes-bg.jpg') 50% 50% no-repeat fixed;
+	background-size: cover;
+	text-align: center;
+}
+
+.quotes__wrapper {
+	padding: 12.5rem 20rem;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quotes__text {
+	color: #fff;
+
+}
+
+.quotes__headline {
+	color: #fff;
+}
+
+.quotes__icon {
+	color: #fff;
+	font-size: 4rem;
+}

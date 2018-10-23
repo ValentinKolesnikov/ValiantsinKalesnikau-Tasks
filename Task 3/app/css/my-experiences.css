@@ -1,0 +1,45 @@
+.my-experiences__left-side {
+	background: url('../Images/experience-img.jpg') 0 0 no-repeat;
+	background-size: cover;
+}
+
+.my-experiences__right-side {
+	background-color: #e9714c;
+
+}
+
+.my-experiences__right-side_padding {
+	padding: 3rem 6rem;
+}
+
+.dates__interval {
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	font-size: 1.9rem;
+	margin-left: 0.5rem;
+}
+
+.dates__headline {
+	display: inline-block;
+	margin: 2rem 0;
+}
+
+.my-experiences__headline-2 {
+	margin: 0;
+}
+
+.dates__icon {
+	font-size: 3.5rem;
+	color: #fff;
+	margin-right: 1rem;
+	vertical-align: middle;
+}
+
+.dates__item {
+	display: inline-block;
+}
+
+.dates_text {
+	margin-top: 0;
+	margin-left: 6rem;
+}

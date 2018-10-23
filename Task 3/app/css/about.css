@@ -1,0 +1,90 @@
+.about-left {
+	height: 100%;
+	position: relative;
+}
+
+.about__text {
+	margin: 3rem 3rem 3.5rem 2rem;
+}
+
+.about-text__headline {
+	margin-bottom: 1.5rem;
+}
+
+.about-text__parag_gold {
+	color: #E5B66A;
+}
+
+.about-right {
+	height: 100%;
+	position: relative;
+}
+
+.my-skills {
+	height: 100%;
+}
+
+.my-skills__right-side {
+	background-color: #E3AE57;
+	height: 100%;
+	color: #fff;
+
+}
+
+.my-skills__left-side {
+	background: url('../Images/about-img.jpg') 50% 0 no-repeat;
+	background-size: cover;
+}
+
+.my-skills__desc {
+	padding: 1rem 2rem 1rem 3.5rem;
+}
+
+.my-skills__headline {
+	color: #fff;
+	margin: 0 0 2rem 0;
+}
+
+.my-skills__text {
+	color: #fff;
+}
+
+.progress {
+	width: 100%;
+	height: 2px;
+	margin: 1.5rem 0;
+	background-color: #fff;
+}
+
+.progress__label {
+	height: 100%;
+	background-color: #562908;
+	width: 50%;
+	display: block;
+}
+
+.progress__label_90 {
+	width: 90%;
+}
+
+.progress__label_70 {
+	width: 70%;
+}
+
+.progress__label_80 {
+	width: 80%;
+}
+
+.my-skills__progress-bar {
+	margin-top: 3rem;
+	font-weight: bold;
+}
+
+.progress-bar__span {
+	color: #242C2B;
+}
+
+.progress-bar__text {
+	display: flex;
+	justify-content: space-between;
+}

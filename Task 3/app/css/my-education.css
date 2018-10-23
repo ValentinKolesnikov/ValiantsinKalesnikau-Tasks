@@ -1,0 +1,16 @@
+.my-education__right-side {
+	background: url('../Images/education-img.jpg') 0 0 no-repeat;
+	background-size: cover;
+}
+
+.my-education__left-side {
+	background-color: #e4ae58;
+}
+
+.my-education__right-side_padding {
+	padding: 3rem 6rem;
+}
+
+.my-education__headline-2 {
+	margin: 0;
+}

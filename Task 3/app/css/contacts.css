@@ -1,0 +1,133 @@
+.say-hello__headline {
+	color: #fff;
+	margin: 0;
+}
+
+.contacts__left-side {
+	background-color: #e9714c;
+}
+
+.say-hello {
+	padding: 3rem;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-style::-webkit-input-placeholder {
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.form-style::-moz-placeholder {
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.form-style:-ms-input-placeholder {
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.form-style:-o-input-placeholder {
+	font-size: 1.6rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.form-style:active,
+.form-style {
+	outline: none;
+}
+
+.form-style {
+	border: 0px solid #fff;
+	font-size: 1.8rem;
+	color: #fff;
+	background-color: transparent;
+	border-bottom: 1px solid #e4ae58;
+	padding: 1rem;
+	font-weight: 3006
+}
+
+.contact-form__name {
+	margin-bottom: 2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2rem;
+}
+
+.contact-form__email {
+	margin-bottom: 2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2rem;
+}
+
+.contact-form__message {
+	margin-bottom: 2rem;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2rem;
+}
+
+.contact-form__submit {
+	max-width: 40%;
+	color: #fff;
+	background-color: #fff;
+	transition: 0.3s all ease;
+	font-weight: lighter;
+	color: #161616;
+	border: 3px solid #fff;
+	text-transform: capitalize;
+	font-size: 1.8rem;
+}
+
+.contact-form__submit:hover {
+	background-color: transparent;
+	color: #fff;
+	transition: 0.3s all ease;
+}
+
+.visit-my-office__left-side {
+	background: url('../Images/contact-img.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.visit-my-office__right-side {
+	background-color: #161616;
+	height: 100%;
+}
+
+.visit-my-office {
+	height: 100%;
+}
+
+.visit-my-office__headline {
+	color: #FFF;
+}
+
+.visit-my-office__right-side_padding {
+	padding: 1rem 4rem;
+}
+
+.visit-my-office__email {
+	color: #e4ae58;
+}
+
+.visit-my-office__site {
+	color: #e4ae58;
+}
+
+.visit-my-office__contact {
+	margin-bottom: 2rem;
+}
+
+.visit-my-office__icon {
+	color: #9e9e9e;
+	font-size: 1.5rem;
+	margin-right: 1rem;
+	vertical-align: middle;
+}
