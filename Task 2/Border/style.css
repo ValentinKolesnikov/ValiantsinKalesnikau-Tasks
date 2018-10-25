@@ -12,7 +12,11 @@ html{
 body{
 	font: 1.2rem 'Open Sans', sans-serif;
 	color: #fff;
+	width: 955px;
+	margin: auto;
 }
+
+
 
 .main-header-headline{
 	color: #000;
@@ -25,30 +29,128 @@ body{
 	font-family: 'Rage Italic LET';
 	color: rgb(104,121,141);
 }
+
 .main-header{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	height: 200px;
 	width: 100%;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
 }
-.main-header::before{
-	content: '';
-	position: absolute;
-	z-index: -1;
-	width: 200%;
-	height: 215%;
-	background: url('./image/spice-social-gadget-sprite.png');
-	-webkit-transform: rotate(-6deg);
-	transform: rotate(-6deg);	
-}
+
 .border-cont{
 	display: inline-block;
 	border: 4px solid #fff;
 	opacity: 0.93;
+	z-index: 99;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+.sprite {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 955px;
+	height: 200px;
+	background: rgb(240, 240, 240);
+	overflow: hidden;
+}
+
+.sprite__left {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 70px;
+	height: 280px;
+	padding: 12px;
+	transform: translate(0px, 10px) rotate(-3deg);
+}
+
+.sprite__right {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 70px;
+	height: 280px;
+	padding: 12px;
+	transform: translate(0px, 7px) rotate(-3deg);
+}
+
+.sprite__lines {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 775px;
+	height: 200px;
+	transform: translate(0px, -25px) rotate(-3deg);
+}
+
+.sprite__line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 775px;
+	height: 40px;
+}
+
+.sprite__icon {
+	border-radius: 5px;
+	background-image: url(./image/spice-social-gadget-sprite.png);
+	background-size: 1100%;
+	width: 25px;
+	height: 25px;
+}
+
+.sprite__icon1 {
+	background-position: 0px -100px;
+}
+
+.sprite__icon2 {
+	background-position: -25px -100px;
+}
+
+.sprite__icon3 {
+	background-position: -50px -100px;
+}
+
+.sprite__icon4 {
+	background-position: -75px -100px;
+}
+
+.sprite__icon5 {
+	background-position: -100px -100px;
+}
+
+.sprite__icon6 {
+	background-position: -125px -100px;
+}
+
+.sprite__icon7 {
+	background-position: -150px -100px;
+}
+
+.sprite__icon8 {
+	background-position: -175px -100px;
+}
+
+.sprite__icon9 {
+	background-position: -200px -100px;
+}
+
+.sprite__icon10 {
+	background-position: -225px -100px;
+}
+
+.sprite__icon11 {
+	background-position: -250px -100px;
 }
 .btn-block{
 	height: 115px;
@@ -56,7 +158,7 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 	padding: 20px;
-	margin: 10px;
+	margin: 10px 0;
 }
 .new-btn{
 	border: 1px solid rgba(0,0,0,0.1);
