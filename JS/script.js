@@ -1,31 +1,52 @@
 function task1(){
-	alert(findPrime());
+	alert('Нахождение всех простых чисел до n');
+	let n = +prompt('Введите n', 10);
+	alert('Все простые числа до'+ n +': ' + findPrimeTo(n));
 }
-function task3(){
-	alert(sumFibon());
-}
-function task4(){
-	alert('Десять последних чисел: ' + tenNumbs());
-}
-function task5(){
-	alert('Среднее арифметическое чисел в массиве:' + averageArray());
-}
-function task6(){
-	alert('Максимальное число в массиве: ' + findMax());
-}
-function task7(){
-	alert('Уникальные значения массива: ' + findUnique());
-}
-function task8(){
-	alert((isPalindrome()===true)? "ИСТИНА":"ЛОЖЬ");
-}
-function task9(){
-	alert('Сумма цифр: ' + sumNumeral());
+function task2() {
+	alert('Нахождение n простых чисел');
+	let n = +prompt('Введите n', 10);
+	alert(n+' простых чисел: ' + findPrime(n));
 }
 
-function findPrime(){
-	alert('Нахождение всех простых чисел до n');
+function task3(){
+	alert('Нахождение суммы n четных чисел Фибоначчи')
 	let n = prompt('Введите n', 10);
+	alert(sumFibon(n));
+}
+function task4(){
+	alert('Нахождение 10 последних чисел последовательности')
+	let n = prompt('Введите n', 10);
+	alert('Десять последних чисел: ' + tenNumbs(n));
+}
+function task5(){
+	alert('Нахождение среднего арифметического чисел массива');
+	let array = arrayFill(0);
+	alert('Среднее арифметическое чисел в массиве: ' + averageArray(array));
+}
+function task6(){
+	alert('Нахождение максимального числа в массиве');
+	let array = arrayFill(0);
+	alert('Максимальное число в массиве: ' + findMax(array));
+}
+function task7(){
+	alert('Нахождение уникальных значений массива')
+	let array = arrayFill('word');
+	alert('Уникальные значения массива: ' + findUniqueObj(array));
+}
+function task8(){
+	let string = prompt('Введите строку', 'Доход');
+	alert((isPalindrome(string)===true)? "ИСТИНА":"ЛОЖЬ");
+}
+function task9(){
+	alert('Нахождение суммы цифр числа');
+	let numb = prompt('Введите число', '445342262');
+	alert('Сумма цифр: ' + sumNumeral(numb));
+}
+
+
+
+function findPrimeTo(n){	
 	let numbers = [];
 	point:
 	for(let i=2;i<=n;i++){
@@ -36,10 +57,21 @@ function findPrime(){
 	}
 	return numbers;
 }
-
-function sumFibon(){
-	alert('Нахождение суммы n четных чисел Фибоначчи')
-	let n = prompt('Введите n', 10);
+function findPrime(n){
+	let numbers = [];
+	point:
+	for (let i = 2; i > 0; i++) {
+		for (let j = 2; j < i; j++) {
+			if (i % j === 0) continue point;
+		}
+		numbers.push(i);
+		if(numbers.length === n){
+			break;
+		}
+	}
+	return numbers;
+}
+function sumFibon(n){
 	let fibNums = [1,1];
 	let sum =0;
 	for(let i=2;i<Infinity;i++){
@@ -56,9 +88,7 @@ function sumFibon(){
     return sum;
 }
 
-function tenNumbs(){
-	alert('Нахождение 10 последних чисел последовательности')
-	let n = prompt('Введите n', 10);
+function tenNumbs(n){
 	let sum = 0;
 
 	for(let i =1;i<=n;i++){
@@ -81,9 +111,7 @@ function arrayFill(def){
 	return array;
 }
 
-function averageArray(){
-	alert('Нахождение среднего арифметического чисел массива');
-	let array = arrayFill(0);
+function averageArray(array){
 	let sum =0;
 
 	for(let i =0;i<array.length;i++){
@@ -93,9 +121,7 @@ function averageArray(){
 	return sum/array.length;
 }
 
-function findMax(){
-	alert('Нахождение максимального числа в массиве');
-	let array = arrayFill(0);
+function findMax(array){
 	let max = array[0];
 
 	for(let i=1; i<array.length;i++){
@@ -105,29 +131,35 @@ function findMax(){
 	return max;
 }
 
-function findUnique(){
-	alert('Нахождение уникальных значений массива')
-	let array = arrayFill('word');
-	let cloneArray = array;
-	let unique;
+function findUnique(array){
+	let str;
 	let uniqueArray =[];
-
-	for(let i = 0; i < cloneArray.length; i++){
-		unique = cloneArray[i];
-		for (let j = i+1; j < cloneArray.length; j++) {
-			if (unique === cloneArray[j]){
-				cloneArray.splice(j,1);
+	point:
+	for(let i = 0; i < array.length; i++){
+		str = array[i];
+		for (let j = 0; j < uniqueArray.length; j++) {
+			if (str === uniqueArray[j]){
+				continue point;
 			}
 		}
-		
-		uniqueArray.push(unique);
+		uniqueArray.push(array[i]);
 	}
+	
 	 return uniqueArray;
 }
 
-function sumNumeral(){
-	alert('Нахождение суммы цифр числа');
-	let numb = prompt('Введите число', '445342262');
+function findUniqueObj(array){
+	let obj= {};
+	let str;
+	for(let i=0;i<array.length;i++){
+		str = array[i];
+		obj[str] = true;
+	}
+
+	return Object.keys(obj);
+}
+
+function sumNumeral(numb){
 	let sum = 0;
 
 	for(let i = 0; i < numb.length; i++){
@@ -137,8 +169,7 @@ function sumNumeral(){
 	return sum;
 }
 
-function isPalindrome(){
-	let string = prompt('Введите строку', 'Доход');
+function isPalindrome(string){
 	string = string.toLowerCase();
 	let newString = '';
 	for (let i = string.length-1; i >= 0; i--) {
