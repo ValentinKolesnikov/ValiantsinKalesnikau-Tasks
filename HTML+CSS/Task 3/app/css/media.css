@@ -194,7 +194,7 @@
 		color: #E3AE57;
 	}
 
-	.site-headline__h1 {
+	.site-headline__main-words {
 		color: #fff;
 	}
 
@@ -364,7 +364,7 @@
 }
 
 @media (min-height: 550px) and (max-height: 600px) {
-	.site-headline__h1 {
+	.site-headline__main-words {
 		font-size: 3.8rem;
 	}
 
