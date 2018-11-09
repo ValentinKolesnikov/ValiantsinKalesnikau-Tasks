@@ -30,7 +30,7 @@ window.onload = function() {
 	
 	setMultyStyle(calendar, 'flex-basis: ' + (100 / 6) + '%; padding: 15px;');
 	setMultyStyle(days, 'font-size: 20px; color: #FFE4B5;');
-	setMultyStyle(captions, 'font-size: 25px; text-decoration: underline; color: #40E0D0;');
+	setMultyStyle(captions, 'font-size: 25px; text-decoration: underline; color: #fff;');
 
 	
 }
@@ -84,9 +84,23 @@ function calendarShow(parent, date){
 
 	}
 	for (let i = 0; i < tableBody.rows.length; i++) {
-		
+
 		for (let j = 0; j < tableBody.rows[i].cells.length; j++) {
-			if(i>0 && (j===6 || j===5)){
+
+			if (+tableBody.childNodes[i].childNodes[j].innerHTML == new Date().getDate() && date.getMonth() == new Date().getMonth()) {
+				tableBody.childNodes[i].childNodes[j].className += ' active';
+				let active = document.querySelector('.active');
+				setStyle(active, 'font-weight: bold; color: black;');
+			}
+
+
+		}
+	}
+	for (let i = 0; i < tableBody.rows.length; i++) {
+
+		for (let j = 0; j < tableBody.rows[i].cells.length; j++) {
+			
+			if (i > 0 && (j === 6 || j === 5) && tableBody.childNodes[i].childNodes[j].className.split(' ')[1] !== 'active') {
 				tableBody.childNodes[i].childNodes[j].className += ' day-off';
 			}
 			let dayOff = document.querySelectorAll('.day-off');
@@ -94,15 +108,9 @@ function calendarShow(parent, date){
 				dayOff[i].style.fontWeight = 'bold';
 				dayOff[i].style.color = '#8B0000';
 			}
-			if (+tableBody.childNodes[i].childNodes[j].innerHTML == new Date().getDate() && date.getMonth() == new Date().getMonth()) {
-				tableBody.childNodes[i].childNodes[j].className += ' active';
-				let active = document.querySelector('.active');
-				setStyle(active, 'font-weight: bold; color: black !important;');
-			}
-			
-			
 		}
 	}
+	
 	
 	
 	tableBody.style.textAlign = 'center';
