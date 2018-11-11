@@ -11,7 +11,7 @@
 	margin-bottom: 1.5rem;
 }
 
-.about-text__parag_gold {
+.about-text__parag {
 	color: #E5B66A;
 }
 
@@ -63,15 +63,15 @@
 	display: block;
 }
 
-.progress__label_90 {
+.progress__first-label {
 	width: 90%;
 }
 
-.progress__label_70 {
+.progress__second-label {
 	width: 70%;
 }
 
-.progress__label_80 {
+.progress__third-label {
 	width: 80%;
 }
 
