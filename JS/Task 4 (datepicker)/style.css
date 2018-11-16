@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+button,
+button:focus {
+	outline: none;
+	border: none;
+}
+
+.active {
+	color: black;
+	font-weight: 400;
+}
+
+.day-off {}
+
+.calendar {
+	font-size: 12px;
+	text-align: center;
+	padding: 45px 13px 20px 13px;
+	background-color: #2C7CFF;
+	border-radius: 6px;
+	color: #fff;
+	font-weight: 300;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	-moz-box-shadow: 0 10px 6px -6px #777;
+	box-shadow: 0 10px 6px -6px #777;
+}
+.number{
+	padding: 7px;
+}
+.calendar__caption {
+	color: #fff;
+	position: relative;
+	top: 30px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.calendar__next-month {
+	right: 35px;
+}
+
+.calendar__prev-month {
+	left: 35px;
+}
+
+.month-change-btn {
+	position: absolute;
+	top: -3px;
+	display: inline-block;
+	font-size: 22px;
+	cursor: pointer;
+	background-color: transparent;
+	font-weight: bold;
+	color: #fff;
+
+}
+
+.caption__date {
+	display: inline-block;
+}
+
+.date-picker__button-foshow {
+	width: 16px;
+	height: 16px;
+	position: relative;
+	left: -16px;
+	top: 3px;
+	background: url('./img/calenda-icon.png') 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.date-picker__input {
+	border-radius: 2px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.calendar{
+	position: absolute;
+	z-index: 99;
+	transition: all 0.2s ease;
+}
+.number{
+	transition: all 0.2s ease;
+}
+.number:hover{
+	background-color: rgba(0,0,0,0.2);
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
