@@ -7,15 +7,51 @@
 	<title>JS</title>
 </head>
 <body>
-	<button onclick="task1()">Task 1</button>
-	<button onclick="task2()">Task 2</button>
-	<button onclick="task3()">Task 3</button>
-	<button onclick="task4()">Task 4</button>
-	<button onclick="task5()">Task 5</button>
-	<button onclick="task6()">Task 6</button>
-	<button onclick="task7()">Task 7</button>
-	<button onclick="task8()">Task 8</button>
-	<button onclick="task9()">Task 9</button>
+	<div class="task1">
+		<p>Найти все простые числа до заданного n. Простые числа - это те числа, которые делятся только на себя и на 1. 1 <= n 1 000 000 000</p>
+		<input placeholder="7" type="text" class="task1__input">
+		<button onclick="task1()">Go</button>
+	</div>
+	<div class="task2">
+		<p>Найти первые n простых чисел. 1 =< n <=1000000</p>
+		<input placeholder="7" type="text" class="task2__input">
+		<button onclick="task2()">Go</button>
+	</div>
+	<div class="task3">
+		<p>Найти сумму первых n четных чисел фибоначчи. Числа фибоначчи - первые два числа равны 1 и 1, а каждое последующее число равно сумме двух предыдущих чисел. 1 <= n <= 100000</p>
+		<input placeholder="7" type="text" class="task3__input">
+		<button onclick="task3()">Go</button>
+	</div>
+	<div class="task4">
+		<p>Серия чисел, 1^1 + 2^2 + 3^3 + ... + 10^10 = 10405071317 (^ - степень числа). Найдите 10 последних цифр результата такой последовательности, для заданного n. 1 <= n <= 1000</p>
+		<input placeholder="7" type="text" class="task4__input">
+		<button onclick="task4()">Go</button>
+	</div>
+	<div class="task5">
+		<p>Найти среднее арифметическое чисел из массива.</p>
+		<input placeholder="1 2 3 4 5" type="text" class="task5__input">
+		<button onclick="task5()">Go</button>
+	</div>
+	<div class="task6">
+		<p>Найти максимальное число в массиве.</p>
+		<input placeholder="1 2 3 4 5" type="text" class="task6__input">
+		<button onclick="task6()">Go</button>
+	</div>
+	<div class="task7">
+		<p>Найдите все уникальные строки в массиве.</p>
+		<input placeholder="1 word 1 word word word1" type="text" class="task7__input">
+		<button onclick="task7()">Go</button>
+	</div>
+	<div class="task8">
+		<p>Определить, является ли фраза/слово палиндромом</p>
+		<input placeholder="ДОХОД" type="text" class="task8__input">
+		<button onclick="task8()">Go</button>
+	</div>
+	<div class="task9">
+		<p>Найти сумму цифр данного числа</p>
+		<input placeholder="234234244" type="text" class="task9__input">
+		<button onclick="task9()">Go</button>
+	</div>
 
 	<script src="./script.js"></script>
 </body>

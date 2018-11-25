@@ -1,89 +1,86 @@
 function task1(){
-	alert('Нахождение всех простых чисел до n');
-	let n = +prompt('Введите n', 10);
-	alert('Все простые числа до'+ n +': ' + findPrimeTo(n));
+	let n = +document.querySelector('.task1__input').value;
+	document.querySelector('.task1').innerHTML += '<br>Все простые числа до ' + n + ': ' + findPrimeTo(n);
+	
 }
 function task2() {
-	alert('Нахождение n простых чисел');
-	let n = +prompt('Введите n', 10);
-	alert(n+' простых чисел: ' + findPrime(n));
+	let n = +document.querySelector('.task2__input').value;
+	document.querySelector('.task2').innerHTML += '<br>'+n+' простых чисел: ' + findPrime(n);
 }
 
 function task3(){
-	alert('Нахождение суммы n четных чисел Фибоначчи')
-	let n = prompt('Введите n', 10);
-	alert(sumFibon(n));
+	let n = +document.querySelector('.task3__input').value;
+	document.querySelector('.task3').innerHTML += '<br> Сумма '+n+ ' чисел Фибоначчи '+sumFibon(n);
 }
 function task4(){
-	alert('Нахождение 10 последних чисел последовательности')
-	let n = prompt('Введите n', 10);
-	alert('Десять последних чисел: ' + tenNumbs(n));
+	let n = +document.querySelector('.task4__input').value;
+	document.querySelector('.task4').innerHTML += '<br> Десять последних чисел: ' + tenNumbs(n);
 }
 function task5(){
-	alert('Нахождение среднего арифметического чисел массива');
-	let array = arrayFill(0);
-	alert('Среднее арифметическое чисел в массиве: ' + averageArray(array));
+	let string = document.querySelector('.task5__input').value;
+	let array = breakToArray(string);
+	document.querySelector('.task5').innerHTML += '<br> Среднее арифметическое чисел в массиве: ' + averageArray(array);
 }
 function task6(){
-	alert('Нахождение максимального числа в массиве');
-	let array = arrayFill(0);
-	alert('Максимальное число в массиве: ' + findMax(array));
+	let string = document.querySelector('.task6__input').value;
+	let array = breakToArray(string);
+	document.querySelector('.task6').innerHTML += '<br> Максимальное число в массиве: ' + findMax(array);
 }
 function task7(){
-	alert('Нахождение уникальных значений массива')
-	let array = arrayFill('word');
-	alert('Уникальные значения массива: ' + findUniqueObj(array));
+	let string = document.querySelector('.task7__input').value;
+	let array = breakToArray(string);
+	document.querySelector('.task7').innerHTML += '<br> Уникальные значения массива: ' + findUniqueObj(array);
 }
 function task8(){
-	let string = prompt('Введите строку', 'Доход');
-	alert((isPalindrome(string)===true)? "ИСТИНА":"ЛОЖЬ");
+	let string = document.querySelector('.task8__input').value;
+	document.querySelector('.task8').innerHTML += +(isPalindrome(string) === true) ? "<br> ИСТИНА" : "<br> ЛОЖЬ";
 }
 function task9(){
-	alert('Нахождение суммы цифр числа');
-	let numb = prompt('Введите число', '445342262');
-	alert('Сумма цифр: ' + sumNumeral(numb));
+	let numb = document.querySelector('.task9__input').value;
+	document.querySelector('.task9').innerHTML += '<br>Сумма цифр: ' + sumNumeral(numb);
 }
 
-
-
-function findPrimeTo(n){	
-	let numbers = [];
-	point:
-	for(let i=2;i<=n;i++){
-		for(let j=2;j<i;j++){
-			if(i % j === 0) continue point;
-		}
-		numbers.push(i);
+function isPrime(n) {
+  if (n < 2) {
+    return false;
+  }
+  for (var i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+function breakToArray(str){
+	return str.split(' ');
+}
+function findPrimeTo(n){
+	var result = [];
+	for(let i =0; i < n; i++){
+		if(isPrime(i))
+			result.push(i);
 	}
-	return numbers;
+	return result;
 }
+
 function findPrime(n){
-	let numbers = [];
-	point:
-	for (let i = 2; i > 0; i++) {
-		for (let j = 2; j < i; j++) {
-			if (i % j === 0) continue point;
-		}
-		numbers.push(i);
-		if(numbers.length === n){
-			break;
-		}
+	var result = [];
+	for (let i = 0; result.length < n; i++) {
+		if (isPrime(i))
+			result.push(i);
 	}
-	return numbers;
+	return result;
 }
 function sumFibon(n){
 	let fibNums = [1,1];
+	let fibEvenNums = [];
 	let sum =0;
-	for(let i=2;i<Infinity;i++){
+	for (let i = 2; fibEvenNums.length < n; i++) {
 		fibNums.push(fibNums[i - 2] + fibNums[i - 1]);
 		if(fibNums[i] % 2 ===0) {
+			fibEvenNums.push(fibNums[i]);
 			sum+=fibNums[i];
-			n--;
 		}
-		if (n === 0) {
-			break;
-		}
-		
 	}
     return sum;
 }
@@ -96,19 +93,13 @@ function tenNumbs(n){
 	}
 	sum = String(sum);
 	let tenNumb = '';
+	if(sum.length<=10) return sum;
+	else{
 	for(let i = sum.length-10;i<sum.length;i++){
 		tenNumb+=sum[i];
 	}
-	return +tenNumb;
-}
-
-function arrayFill(def){
-	let N = +prompt('Введите длинну массива', 5);
-	let array = [];
-	for(let i = 0; i<N ;i++){
-		array.push(prompt('Введите число (осталось ' + (N-i) + ' )' , def));
+	return String(+tenNumb);
 	}
-	return array;
 }
 
 function averageArray(array){
@@ -132,20 +123,13 @@ function findMax(array){
 }
 
 function findUnique(array){
-	let str;
-	let uniqueArray =[];
-	point:
-	for(let i = 0; i < array.length; i++){
-		str = array[i];
-		for (let j = 0; j < uniqueArray.length; j++) {
-			if (str === uniqueArray[j]){
-				continue point;
-			}
-		}
-		uniqueArray.push(array[i]);
-	}
-	
-	 return uniqueArray;
+	 let result = [];
+	 for (let i = 0; i < arr.length; i++) {
+	 	if (result.indexOf(arr[i]) === -1) {
+	 		result.push(arr[i]);
+	 	}
+	 }
+	 return result;
 }
 
 function findUniqueObj(array){
