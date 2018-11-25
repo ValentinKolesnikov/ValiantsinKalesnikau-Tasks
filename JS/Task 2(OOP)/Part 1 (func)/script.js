@@ -4,10 +4,10 @@ function Vehicle(brand, model, power, tankVolume) {
 	
 	this.brand = brand;
 	this.model = model;
-	this.petrolAmount = function (amount) {
-		if (arguments.length === 0) {
-			return petrolAmount;
-		}
+	this.getPetrolAmount = function(){
+		return petrolAmount;
+	}
+	this.setPetrolAmount = function (amount) {
 		if (amount < 0) {
 			throw new Error('Значение должно быть положительным');
 		}
@@ -44,8 +44,8 @@ function Car(brand, model, power, tankVolume){
 
 let porshe = new Car('Porshe', '229 Carerra', 200, 30);
 
-porshe.petrolAmount(1.4);
-console.log(porshe.petrolAmount());
+porshe.setPetrolAmount(1.4);
+console.log(porshe.getPetrolAmount());
 porshe.makeSound();
 porshe.run();
 porshe.stop();

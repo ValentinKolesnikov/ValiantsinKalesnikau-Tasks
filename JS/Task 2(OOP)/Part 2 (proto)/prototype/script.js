@@ -7,7 +7,10 @@ function Vehicle(brand, model, power, tankVolume) {
 	this.power = power;
 
 }
-Vehicle.prototype.PetrolAmount = function (amount) {
+Vehicle.prototype.getPetrolAmount = function (amount) {
+	return this.petrolAmount;
+}
+Vehicle.prototype.setPetrolAmount = function (amount) {
 	if (arguments.length === 0) {
 		return this.petrolAmount;
 	}
@@ -55,8 +58,8 @@ let porshe = new Car('Porshe', '924 Vehiclerera', 210, 30);
 let lada = new Car('LADA', 'Kalina', 106, 20);
 
 
-porshe.PetrolAmount(1.4);
-console.log(porshe.PetrolAmount());
+porshe.setPetrolAmount(1.4);
+console.log(porshe.getPetrolAmount());
 lada.run();
 lada.stop();
 porshe.run();
