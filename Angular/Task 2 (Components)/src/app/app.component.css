@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.to-do__header{
+	padding: 20px;
+}
+.to-do__panel{
+	display: flex;
+	flex-direction: column;
+}
+.panel__description-input{
+	width: 400px;
+	height: 50px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	margin: 10px;
+}
+.panel__header-input{
+	margin: 10px;
+	width: 300px;
+	height: 25px;
+	font-size: 20px;
+}
+
+.panel__add-btn{
+	background-color: orange;
+	border: none;
+	padding: 5px 7px;
+	outline: none;
+	margin-left: 10px;
+	transition: all 0.1s ease;
+	color: white;
+	cursor: pointer;
+}
+.panel__add-btn:hover{
+	opacity: 0.85;
+	transition: all 0.1s ease;
+}
+.panel__list{
+	background: orange;
+}
