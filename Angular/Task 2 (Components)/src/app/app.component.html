@@ -1,3 +1,4 @@
+
 <div class="to-do">
 	<div class="to-do__header">
 		<h1>To Do List</h1>
@@ -6,7 +7,7 @@
 		<div class="panel__add-area">
 			<input #headr class="panel__header-input" [(ngModel)]="header" placeholder="Task" /> <br>
 			<textarea #descr class="panel__description-input" [(ngModel)]="description" cols="30" rows="10"></textarea> <br>
-<button class="panel__add-btn" (click)="addTask(description, header) descr.value = '' headr = ''">Добавить</button> <br>
+<button class="panel__add-btn" (click)="addTask(description, header)">Добавить</button> <br>
 		</div>
 
 		<table class="panel__list list">
@@ -25,3 +26,4 @@
 		</table>
 	</div>
 </div>
+<router-outlet></router-outlet>
